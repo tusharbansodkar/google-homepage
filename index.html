@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google homepage</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {}
+
+        /* main-section styling */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+
+        }
+
+        #logoimage {
+            max-width: 280px;
+        }
+
+        input[type="text"] {
+            width: 35vw;
+            border-color: transparent;
+            background-color: transparent;
+
+        }
+
+
+        #searchbar {
+            border: 2px solid #eae5e5;
+            padding: 8px 16px 8px 16px;
+            border-radius: 25px;
+            margin-top: 30px;
+            
+        }
+
+        #searchbar:hover{
+            box-shadow: 1px 0px 4px 1px #eae5e5;
+        }
+
+        #buttons {
+
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .btn {
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 5px 3px;
+            padding: 8px 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* navbar styling */
+        #navbar {
+
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .navlinks {
+            display: flex;
+            list-style: none;
+            margin-top: 24px;
+
+        }
+
+        .navlinkleft {
+            text-decoration: none;
+            padding-left: 20px;
+            color: black;
+            font-size: 13px;
+        }
+
+        .navlinkright {
+            text-decoration: none;
+            padding-right: 20px;
+            color: black;
+            font-size: 13px;
+        }
+
+        #rightside {
+            margin-right: 20px;
+        }
+
+
+        .navlinkleft:hover,
+        .navlinkright:hover {
+            text-decoration: underline;
+
+        }
+
+        .SignIn {
+            text-decoration: none;
+            background-color: #5080f3;
+            color: white;
+            font-size: 13px;
+            padding: 7px 10px;
+            font-weight: bold;
+    
+        }
+
+
+        /* footer styling */
+        #bottom {
+            display: flex;
+            justify-content: space-between;
+            
+            padding: 15px;
+            background: #f4f4f4;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+
+
+        }
+
+        .footerlinks {
+            display: flex;
+            list-style: none;
+        }
+
+        .footerlinkleft {
+            color: #70757a;
+            font-size: 16px;
+            text-decoration: none;
+            padding-left: 20px;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .footerlinkright {
+            color: #70757a;
+            font-size: 16px;
+            text-decoration: none;
+            padding-right: 20px;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .footerlinkleft:hover,
+        .footerlinkright:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul class="navlinks" id="leftside">
+            <li><a href="#" class="navlinkleft">About</a> </li>
+            <li><a href="#" class="navlinkleft">Store</a> </li>
+        </ul>
+        <ul class="navlinks" id="rightside">
+            <li><a href="#" class="navlinkright">Gmail</a> </li>
+            <li><a href="#" class="navlinkright">Images</a> </li>
+            <li><a href="#" class="SignIn">Sign In</a> </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+    <main id="main-section">
+        <img id="logoimage" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="logoimage">
+        <form>
+            <div id="searchbar">
+
+                <input type="text">
+            </div>
+            <div id="buttons">
+
+                <input class="btn" type="submit" value="Google Search">
+                <input class="btn" type="submit" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </main>
+
+
+    <footer id="bottom">
+        <ul id="leftfooter" class="footerlinks">
+            <li><a href="#" class="footerlinkleft">About</a> </li>
+            <li><a href="#" class="footerlinkleft">Advertising</a> </li>
+            <li><a href="#" class="footerlinkleft">Business</a> </li>
+            <li><a href="#" class="footerlinkleft">How search works</a> </li>
+        </ul>
+
+        <ul class="footerlinks" id="rightfooter">
+            <li><a href="#" class="footerlinkright">Privacy</a></li>
+            <li><a href="#" class="footerlinkright">Terms</a> </li>
+            <li><a href="#" class="footerlinkright">Settings</a> </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
